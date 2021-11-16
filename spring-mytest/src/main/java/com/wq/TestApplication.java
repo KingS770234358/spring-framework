@@ -1,14 +1,15 @@
 package com.wq;
 
+import com.wq.config.TestConfig;
+import com.wq.model.User;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Test {
+public class TestApplication {
 	public static void main(String[] args) {
 
 		System.out.println("==================");
-		System.out.println("hah");
 		AnnotationConfigApplicationContext context = new
-				AnnotationConfigApplicationContext(JavaConfig.class);
+				AnnotationConfigApplicationContext(TestConfig.class);
 		User user = (User) context.getBean("user");
 		System.out.println(user.toString());
 		System.out.println("==================");

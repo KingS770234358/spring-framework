@@ -1,4 +1,4 @@
-package com.wq;
+package com.wq.model;
 
 public class User {
 	private String id;
